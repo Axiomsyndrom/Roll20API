@@ -1,0 +1,14 @@
+on("change:campaign:playerpageid", function (){
+    var currentPage = getObj("page",Campaign().get("playerpageid"));
+    var name = currentPage.get("name")
+    if (name.indexOf("[Marker1]") > -1){
+        sendChat("API","%{MusicMacroDummy|Macro1}");}
+    if (name.indexOf("[Marker2]") > -1){
+        sendChat("API","%{MusicMacroDummy|Macro2}");}
+    if (name.indexOf("[Marker3]") > -1){
+        sendChat("API","%{MusicMacroDummy|Macro3}");}
+    if (name.indexOf("[Marker4]") > -1){
+        sendChat("API","%{MusicMacroDummy|Macro4}");}
+    if (name.indexOf("[Marker5]") > -1){
+        sendChat("API","%{MusicMacroDummy|Macro5}");}
+});
